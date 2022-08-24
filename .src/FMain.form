@@ -1,0 +1,36 @@
+# Gambas Form File 3.0
+
+{ Form Form
+  MoveScaled(0,0,109,41)
+  Icon = Picture["icon:/24/exec"]
+  { TextBox1 TextBox
+    MoveScaled(19,9,84,6)
+  }
+  { ButtonCambiar Button
+    MoveScaled(1,23,16,6)
+    Text = ("Realizar Cambios")
+    Picture = Picture["icon:/24/exec"]
+  }
+  { ButtonPegar Button
+    MoveScaled(1,9,16,6)
+    Text = ("Pegar")
+    Picture = Picture["icon:/24/paste"]
+  }
+  { TextBox2 TextBox
+    MoveScaled(20,23,82,6)
+  }
+  { ButtonCopiaralPortapapeles Button
+    MoveScaled(73,30,28,7)
+    ToolTip = ("Copiar al portapapeles")
+    Text = ("Copiar al portapapeles")
+    Picture = Picture["icon:/24/copy"]
+  }
+  { Label1 Label
+    MoveScaled(4,32,67,7)
+    Text = ("Eliminar punto, elimina espacio, elimina signo euros")
+  }
+  { Label2 Label
+    MoveScaled(2,1,105,5)
+    Text = ("Cambiar datos copiado de la hoja de calculo para pegar al documentos  de texto del datos del recalculo del cronograma")
+  }
+}

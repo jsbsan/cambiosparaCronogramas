@@ -1,0 +1,24 @@
+' Gambas class file
+
+Public Sub ButtonPegar_Click()
+
+  TextBox1.Text = Clipboard.Paste("text/plain")
+
+End
+
+Public Sub ButtonCambiar_Click()
+
+  TextBox2.Text = Replace(TextBox1.text, ".", "")
+  TextBox2.Text = Replace(TextBox2.Text, ",", ".")
+  TextBox2.Text = Replace(TextBox2.Text, " €", "")
+  TextBox2.Text = Replace(TextBox2.Text, "\r", "")
+  TextBox2.Text = Replace(TextBox2.Text, " ", "")
+  TextBox2.Text = Replace(TextBox2.Text, "\n\r", "")
+
+End
+
+Public Sub ButtonCopiaralPortapapeles_Click()
+
+  Clipboard.Copy(TextBox2.text, "text/plain")
+
+End
